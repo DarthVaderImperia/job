@@ -1,0 +1,4 @@
+block('head-row')(
+	tag()('tr'),
+	mix()({block:'thead', elem:"head-row"})
+)

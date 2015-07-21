@@ -1,0 +1,4 @@
+block('thead')(
+	tag()('thead'),
+	mix()({block: 'table', elem:'thead'})
+)

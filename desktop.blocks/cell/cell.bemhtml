@@ -1,0 +1,4 @@
+block('cell')(
+	tag()('td'),
+	mix()({block: 'row', elem:'cell'})
+)

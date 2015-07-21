@@ -1,0 +1,4 @@
+block('row')(
+	tag()('tr'),
+	mix()({block: 'tbody', elem:'row'})
+)

@@ -1,0 +1,35 @@
+block('row').content()(function() {
+	var data = this.ctx.data;
+	return [
+		{
+            block: 'cell',
+            content: data.userName
+        },
+        {
+            block: 'cell',
+            content:
+            {
+                block: 'link',
+                mods: { theme: 'islands' },
+                mix: { block: 'cell', elem: 'row' },
+                url: data.postLink,
+                content: [data.userName, ' @', data.userNick]
+            }
+        },
+        {
+            block: 'cell',
+            content: data.createdAt
+        },
+		{
+            block: 'cell',
+            content: data.retweet,
+            mods: {type: data.type}
+        },
+        {
+            block: 'cell',
+            content: "",
+            mods: {type: data.geo}
+        }
+
+	];
+});
